@@ -123,10 +123,9 @@ header {
     color:white;
 }
 
-/* تنسيق الحاوية لجعل النص في المنتصف */
 .founders-container {
     width: 100%;
-    text-align: center; /* هذا السطر هو المسؤول عن التوسط */
+    text-align: center; 
     margin-top: 20px;
     margin-bottom: 20px;
 }
