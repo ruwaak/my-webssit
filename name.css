@@ -1,0 +1,81 @@
+
+/* تنسيق ناعم وبسيط */
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #fafafa; /* رمادي فاتح جداً قريب للأبيض */
+    color: #444;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.minimal-container {
+    background: #ffffff;
+    width: 80%;
+    max-width: 700px;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05); /* ظل خفيف جداً */
+    text-align: center;
+}
+
+.page-header h1 {
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #B08D57; /* اللون الذهبي */
+}
+
+.line {
+    width: 50px;
+    height: 2px;
+    background-color: #B08D57;
+    margin: 0 auto 30px;
+}
+
+/* تنسيق الجدول بشكل خفيف */
+.simple-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.simple-table th {
+    font-weight: 600;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    color: #888;
+    font-size: 14px;
+}
+
+.simple-table td {
+    padding: 20px;
+    border-bottom: 1px solid #f9f9f9;
+    font-size: 15px;
+}
+
+/* تنسيق النصوص السفلية */
+.project-details h2 {
+    font-weight: 400;
+    margin-top: 40px;
+    font-size: 1.2rem;
+}
+
+.simple-nav {
+    margin-top: 40px;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+.simple-nav a {
+    text-decoration: none;
+    color: #B08D57;
+    margin: 0 15px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.simple-nav a:hover {
+    opacity: 0.6;
+}
