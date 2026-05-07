@@ -1,8 +1,7 @@
 
-/* تنسيق ناعم وبسيط */
 body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    background-color: #fafafa; /* رمادي فاتح جداً قريب للأبيض */
+    background-color: #fafafa;  
     color: #444;
     display: flex;
     justify-content: center;
@@ -15,7 +14,7 @@ body {
     max-width: 700px;
     padding: 40px;
     border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05); /* ظل خفيف جداً */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05); 
     text-align: center;
 }
 
@@ -24,7 +23,7 @@ body {
     letter-spacing: 2px;
     text-transform: uppercase;
     margin-bottom: 10px;
-    color: #B08D57; /* اللون الذهبي */
+    color: #B08D57; 
 }
 
 .line {
@@ -34,7 +33,6 @@ body {
     margin: 0 auto 30px;
 }
 
-/* تنسيق الجدول بشكل خفيف */
 .simple-table {
     width: 100%;
     border-collapse: collapse;
@@ -55,7 +53,6 @@ body {
     font-size: 15px;
 }
 
-/* تنسيق النصوص السفلية */
 .project-details h2 {
     font-weight: 400;
     margin-top: 40px;
