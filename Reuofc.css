@@ -9,5 +9,33 @@ h1{ text-align:center;color:RGB(230,230,250);font-size:35px;color:rgb(93,80,118)
 h2{text-align:center ; color:blak ; text-decoration:underline;margin:30px ;padding:20px;font-size:15px}
 table{width:100%;border-collapse:collapse;color:black;background:rgba(245,240,230,0.96);font-weight:bold}
 th{border:1px solid black;padding:10px;text-align:center;color:rgb(230,230,250);font-size:35px;background-color:rgb(93,80,118)}
-td{border:1px solid black;padding:10px;text-align:center;color:black
+td{border:1px solid black;padding:10px;text-align:center;color:black}
+
+
+
+
+
+.button-container {
+    text-align: center;
+    margin-top: 30px;
+    padding-bottom: 50px;
+}
+
+.btn-nav {
+    background-color: #5d5076; 
+    color: white;
+    border: 2px solid #333333; 
+    padding: 12px 30px;
+    margin: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-nav:hover {
+    background-color: #D4AF37; 
+    color: white;
+    transform: scale(1.05);
 }

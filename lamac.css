@@ -53,21 +53,3 @@ h2 {
 li:hover {
   color: #D4AF37; 
 }
-
-.info-btn {
-  position: fixed;
-  bottom: 25px;
-  right: 100px;
-  background-color: #5D5076; 
-  color: #D8D8F2; 
-  border: none;
-  padding: 12px 25px;
-  font-size: 15px;
-  border-radius: 8px; 
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.info-btn:hover {
-  background-color: #6e608a; 
-}
