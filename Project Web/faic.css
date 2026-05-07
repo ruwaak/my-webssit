@@ -1,0 +1,66 @@
+
+
+body{
+  background:url("IMG_0446.jpeg") no-repeat fixed;
+  background-size:cover;
+  font-family:Arial;
+  color:#5D5076;
+}
+
+.box{
+  width:480px;
+  margin:120px auto;
+  padding:25px 25px 60px;
+  background-color:rgba(245,240,230,0.96);
+  border-radius:20px;
+
+}
+
+fieldset{
+  padding:20px;
+  border:2px solid #5D5076;
+  border-radius:15px;
+}
+
+legend{
+  color:#5D5076;
+  font-weight:bold;
+}
+
+label{
+  display:block;
+  font-weight:bold;
+  margin:10px 0 5px;
+}
+
+.rounder{
+  width:100%;
+  padding:6px 8px;
+  border-radius:8px;
+  border:1px solid #ccc;
+  margin-bottom:8px;
+  font-size:13px;
+}
+
+.inline-options{
+  display:flex;
+  gap:20px;
+  margin-bottom:12px;
+}
+
+
+.btn{
+  border:none;
+  padding:10px 30px;
+  border-radius:25px;
+  font-weight:bold;
+  cursor:pointer;
+  margin:10px 5px;
+  background:#5D5076;
+  color:#fff;
+}
+
+.btn:hover{
+  background:#D4AF37;
+  color:#5D5076;
+}

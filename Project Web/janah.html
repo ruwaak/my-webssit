@@ -1,0 +1,131 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us - Tuwaiq Airport</title>
+
+<link rel="stylesheet" href="C:\Users\Ruwaa\OneDrive\Desktop\Project Web\janac.css">
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Contact Us</h1>
+
+    <form id="contactForm" novalidate>
+
+        <div class="input-group">
+            <label>Full Name *</label>
+            <input type="text" id="name" placeholder="Enter your full name" required>
+        </div>
+
+        <div class="input-group">
+            <label>Email Address *</label>
+            <input type="email" id="email" placeholder="example@email.com" required>
+        </div>
+
+        <div class="input-group">
+            <label>Phone Number *</label>
+            <input type="tel" id="phone" placeholder="05XXXXXXXX" required>
+        </div>
+
+        <div class="input-group">
+            <label>Request Type *</label>
+            <select id="type" required>
+                <option value="">Select request type</option>
+                <option>Complaint</option>
+                <option>Suggestion</option>
+                <option>Inquiry</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label>Message *</label>
+            <textarea id="messageText" placeholder="Write your message here..." required></textarea>
+        </div>
+
+        <button type="submit">Submit</button>
+
+        <div id="msg" class="message"></div>
+    </form>
+</div>
+
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    let name = document.getElementById("name");
+    let email = document.getElementById("email");
+    let phone = document.getElementById("phone");
+    let type = document.getElementById("type");
+    let message = document.getElementById("messageText");
+    let msgBox = document.getElementById("msg");
+
+    let emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,}$/;
+    let phonePattern = /^05\d{8}$/;
+
+    // reset borders
+    [name, email, phone, type, message].forEach(field => {
+        field.style.borderColor = "#ddd";
+    });
+
+    // validation
+    if(name.value.trim() === ""){
+        showMsg("Please enter your full name", name);
+        return;
+    }
+
+    if(email.value.trim() === ""){
+        showMsg("Email is required", email);
+        return;
+    }
+
+    if(!emailPattern.test(email.value)){
+        showMsg("Invalid email format", email);
+        return;
+    }
+
+    if(phone.value.trim() === ""){
+        showMsg("Phone number is required", phone);
+        return;
+    }
+
+    if(!phonePattern.test(phone.value)){
+        showMsg("Phone must start with 05 and be 10 digits", phone);
+        return;
+    }
+
+    if(type.value === ""){
+        showMsg("Please select request type", type);
+        return;
+    }
+
+    if(message.value.trim() === ""){
+        showMsg("Message cannot be empty", message);
+        return;
+    }
+
+    // success
+    msgBox.style.display = "block";
+    msgBox.className = "message success";
+    msgBox.textContent = "Your request has been submitted successfully ✈️";
+
+    document.getElementById("contactForm").reset();
+});
+
+function showMsg(text, field){
+    let msgBox = document.getElementById("msg");
+    msgBox.style.display = "block";
+    msgBox.className = "message error";
+    msgBox.textContent = text;
+
+    field.style.borderColor = "red";
+    field.focus();
+}
+</script>
+
+</body>
+</html>
