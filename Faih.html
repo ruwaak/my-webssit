@@ -12,24 +12,24 @@
 <form action="Reuofh.html">
 <fieldset>
 
-<legend>Contact Form</legend>
+<legend>Login</legend>
 
 <label>Name:</label>
-<input type="text" class="rounder" placeholder="Your name" required>
+<input type="text" id="nameField" class="rounder" placeholder="Your name" required>
 
 <label>Email:</label>
-<input type="email" class="rounder" placeholder="example@gmail.com" required>
+<input type="email"  id="emailField" class="rounder" placeholder="example@gmail.com" required>
 
 <label>Phone:</label>
-<input type="tel" class="rounder" placeholder="05xxxxxxxx" required>
+<input type="tel" id="phoneField" class="rounder" placeholder="05xxxxxxxx" required>
+  
+<label>Gender:</label>
+<div id="genderCotainer">
+<input type="radio" id="male" name="gender" value="male" class="inline-options" >
+<label for="male" > Male </label>
 
-<label>Best way to contact you:</label>
-<div class="inline-options">
-  <input type="checkbox"> Email
-  <input type="checkbox"> Phone
-</div>
-
-
+<input type="radio" id="female" name="gender" value="female" class="inline-options" >
+<label for="female" > Female</label>
 
 <div style="text-align:center;">
 <input type="reset" value="reset" class="btn">
